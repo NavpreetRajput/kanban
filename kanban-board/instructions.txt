@@ -1,0 +1,67 @@
+su - root
+root@CentOS ~]# npm
+bash: npm: command not found...
+Install package 'npm' to provide command 'npm'? [N/y] y
+
+========npm@6.14.11 /usr/lib/node_modules/npm
+========v10.24.0
+npm install vue
+npm install -g @vue/cli
+npm install -g @vue/cli @vue/cli-service-global
+yum install -y yum-utils
+sudo rpm -v --import https://download.sublimetext.com/sublimehq-rpm-pub.gpg
+sudo yum-config-manager --add-repo https://download.sublimetext.com/rpm/stable/x86_64/
+sublime-text.repo
+sudo yum install sublime-text
+======== + @vue/cli@4.5.13
+vue create kanban-board
+cd ./kanban-board
+npm i -S vuedraggable
+npm I -S vue-cli-plugin-tailwind
+vue add vue-cli-plugin-fontawesomne
+npm install postcss-preset-env
+npm run serve
+
+
+firewall-cmd --permanent --add-port=8080/tcp
+firewall-cmd --reload
+
+https://www.cyberciti.biz/faq/howto-install-google-chrome-on-redhat-rhel-fedora-centos-linux/
+https://linuxize.com/post/how-to-install-visual-studio-code-on-centos-7/
+
+
+Install Apache
+==============================
+Run the following command:
+    sudo yum install httpd
+Use the systemd systemctl tool to start the Apache service:
+    sudo systemctl start httpd
+Enable the service to start automatically on boot:
+    sudo systemctl enable httpd.service
+Open up port 80 for web traffic:
+    sudo firewall-cmd --add-service=http --permanent
+Reload the firewall:
+    sudo firewall-cmd --reload
+
+
+Install PHP 
+==============================
+Step 1 – Enable PHP Repository
+
+sudo dnf install -y https://rpms.remirepo.net/enterprise/remi-release-8.rpm  
+
+Step 2 – Installing PHP 8 on CentOS
+sudo dnf install php php-cli php-common
+sudo systemctl restart httpd
+
+
+Install MySQL
+============================
+Link: https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-centos-7
+
+wget https://dev.mysql.com/get/mysql57-community-release-el7-9.noarch.rpm
+sudo rpm -ivh mysql57-community-release-el7-9.noarch.rpm
+sudo yum install mysql-server
+sudo systemctl start mysqld
+sudo mysql_secure_installation
+mysql -uroot -proot1234
