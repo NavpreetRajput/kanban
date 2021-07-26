@@ -57,7 +57,7 @@ Here columns are represented as top level array which contain column objects. Co
     },
     {
         "name": "Done",
-        "id":2,
+        "id":3,
         "cards": [
             { "title": "Task 5", "description": "task 5 description","id": 5 },
             { "title": "Task 6", "description": "task 6 description","id": 6 }
